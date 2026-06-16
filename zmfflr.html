@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 리너스 속성에 자바스크립트 코드</title>
+    <script>
+        // 자바스크립트 코드 안에는 아무것도 쓰면 안 된다
+        // function over(obj) {
+        //     obj.src = "img/apple.png";
+        // }
+        // function out(obj) {
+        //     obj.src = "img/banana.png";
+        // }
+    </script>
+</head>
+<body>
+    <h3>마우스를 올려보세요.</h3>
+    <hr>
+    <!-- 자바스크립트에서의 this 는 현재 실행 중인 코드에서 자신이 -->
+    <img src="img/apple.png" alt="사과이미지"
+     onmouseover="over(this)"
+     onmouseout='out(this)'>
+    <!-- <img src="img/apple.png" alt="사과이미지"
+    onmouseover="this.sic='img/banana.png'"
+    onmouseout="this.src='img/apple.png'" -->
+</body>
+</html>
